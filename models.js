@@ -1,10 +1,6 @@
 const Sequelize = require('sequelize');
-const db = new Sequelize('postgres://5432/plantr');
+const db = new Sequelize('postgres://localhost:5432/plantr');
 
-
-const sync = ()=> {
-    
-}
 
 const Gardener = db.define('gardeners', {
     name: Sequelize.STRING,
